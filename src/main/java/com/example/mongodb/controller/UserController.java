@@ -33,4 +33,9 @@ public class UserController {
     public List<AppUser> getAllUsers() {
         return userRepository.findAll();
     }
+
+    @GetMapping("/hello")
+    public String hello(){
+        return "hello world";
+    }
 }
